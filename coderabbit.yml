@@ -1,0 +1,27 @@
+language: "es-AR"
+early_access: false
+reviews:
+  profile: "chill"
+  request_changes_workflow: false
+  high_level_summary: true
+  poem: true
+  review_status: true
+  collapse_walkthrough: false
+  auto_review:
+    enabled: true
+    drafts: false
+  file_path_instructions:
+    - path: "*"
+      instructions: |
+      Review and ensure that:
+        - Check for clean design and modularity to improve long-term scalability.
+        - Identify synchronous operations that may block the event loop, affecting performance.
+        - Limit simultaneous database connections to avoid overload, ideally using connection pools.
+        - Ensure code clarity with descriptive naming and structure.
+        - Verify that errors and exceptions are properly managed without exposing sensitive information.
+        - Optimize database queries to enhance efficiency.
+        - Detect security risks like SQL injections and cross-site scripting vulnerabilities.
+        - Confirm adequate code coverage through automated tests.
+        - Assess adherence to SOLID design principles to encourage a well-structured codebase.
+chat:
+  auto_reply: true
